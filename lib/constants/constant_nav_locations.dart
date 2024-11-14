@@ -4,7 +4,7 @@
 // Created 11/13/2024 - Author: JB
 class ConstantNavLocations {
 
- static final List<String> _navName = [ "Resume", "Projects", "About",];
+ static final List<String> _navName = [ "Resume", "Projects", "About", "Contact"];
 
  static List<String> getNavNames() => _navName;
   
