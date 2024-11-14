@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: const Color(0xFF111827),
         secondaryHeaderColor: const Color(0xFFFACC15),
-        scaffoldBackgroundColor: const  Color(0xFF020617), // primary color for header and background 
-        useMaterial3: true,
+        scaffoldBackgroundColor: const  Color(0xFF020617), // primary color for header and background ,
       ),
       home: const HomePage(),
     );

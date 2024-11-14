@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:resume_web_application/constants/const_texts.dart';
 import 'package:resume_web_application/constants/constant_fontcolors.dart';
 import 'package:resume_web_application/constants/constant_fontsizes.dart';
 
@@ -27,7 +28,7 @@ class CenterLandingLeft extends StatelessWidget {
                                         mainAxisAlignment: MainAxisAlignment.start,
                                          children: [
                                            Text(
-                                            "JACOB BRIA",
+                                            ConstTexts.landingNameString,
                                             style: TextStyle(
                                               fontSize: ConstantFontSizes.landingNameFontSize,
                                               color: ConstantFontcolors.landingNameColor,
@@ -35,7 +36,7 @@ class CenterLandingLeft extends StatelessWidget {
                                             ),
                                            ),
                                            Text(
-                                            "Information Technology Student.",
+                                            ConstTexts.landingSubtitle,
                                             style: TextStyle(
                                               fontSize: ConstantFontSizes.landingSubtitleFontSize,
                                               color: ConstantFontcolors.landingSubtitleColor,
