@@ -13,4 +13,9 @@ class ConstantFontcolors {
   static const Color landingNameColor = Color(0xFF111827);
   static const Color landingSubtitleColor = Color(0xFF111827);
 
+
+  // Skills Page
+  static const Color skillsTitle1Color = Colors.white;
+  static const Color skillsTitle2Color = Color(0xFFFACC15);
+  static const Color skillsColor = Colors.white;
 }

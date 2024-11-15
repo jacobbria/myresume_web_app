@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resume_web_application/widgets/desktop_landing_widgets/center_landing/center_landing.dart';
+import 'package:resume_web_application/widgets/landing_widgets/center_landing/center_landing.dart';
 
 class HomePageLanding extends StatelessWidget {
   const HomePageLanding({super.key, double});

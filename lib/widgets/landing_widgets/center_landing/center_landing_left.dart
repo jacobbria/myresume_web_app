@@ -1,12 +1,17 @@
 
 import 'package:flutter/material.dart';
-import 'package:resume_web_application/constants/const_texts.dart';
-import 'package:resume_web_application/constants/constant_fontcolors.dart';
-import 'package:resume_web_application/constants/constant_fontsizes.dart';
+import 'package:resume_web_application/constants/const_other/const_texts.dart';
+import 'package:resume_web_application/constants/const_fonts/constant_fontcolors.dart';
+import 'package:resume_web_application/constants/const_fonts/constant_fontsizes.dart';
 
-class CenterLandingLeft extends StatelessWidget {
+class CenterLandingLeft extends StatefulWidget {
   const CenterLandingLeft({super.key});
 
+  @override
+  State<CenterLandingLeft> createState() => _CenterLandingLeftState();
+}
+
+class _CenterLandingLeftState extends State<CenterLandingLeft> {
   @override
   Widget build(BuildContext context) {
     return  Expanded(
@@ -20,7 +25,7 @@ class CenterLandingLeft extends StatelessWidget {
                                   color: Theme.of(context).secondaryHeaderColor,
                                   height: MediaQuery.of(context).size.width * .2,
                                   width: MediaQuery.of(context).size.width,
-                                  child:  const Column(
+                                  child:  Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                        Column(
@@ -30,17 +35,27 @@ class CenterLandingLeft extends StatelessWidget {
                                            Text(
                                             ConstTexts.landingNameString,
                                             style: TextStyle(
-                                              fontSize: ConstantFontSizes.landingNameFontSize,
+                                              fontSize: MediaQuery.of(context).size.width > 1450
+                                                ?  ConstantFontSizes.landingNameFontSize
+                                                : ConstantFontSizes.landingNameFontSizeSmall,
                                               color: ConstantFontcolors.landingNameColor,
                                               height: .8,
-                                            ),
+                                            ),       
                                            ),
-                                           Text(
+                                         Text(
                                             ConstTexts.landingSubtitle,
                                             style: TextStyle(
-                                              fontSize: ConstantFontSizes.landingSubtitleFontSize,
+                                              fontSize: MediaQuery.of(context).size.width > 1800
+                                              ?  ConstantFontSizes.landingSubtitleFontSize
+                                              : MediaQuery.of(context).size.width >  1450 
+                                                ? 0
+                                                : MediaQuery.of(context).size.width >  600 
+                                                  ? ConstantFontSizes.landingSubtitleFontSizeSmall
+                                                  : 0,
+
                                               color: ConstantFontcolors.landingSubtitleColor,
                                               ),
+                                               softWrap: true,
                                             )
                                          ],
                                        ),

@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:resume_web_application/constants/constant_fontcolors.dart';
-import 'package:resume_web_application/constants/constant_fontsizes.dart';
-import 'package:resume_web_application/constants/constant_nav_locations.dart';
+import 'package:resume_web_application/constants/const_fonts/constant_fontcolors.dart';
+import 'package:resume_web_application/constants/const_fonts/constant_fontsizes.dart';
+import 'package:resume_web_application/constants/const_other/constant_nav_locations.dart';
 
 class NavBarRight extends StatefulWidget {
   const NavBarRight({super.key});
@@ -19,8 +19,9 @@ class _NavBarRightState extends State<NavBarRight> {
   Widget build(BuildContext context) {
     return Expanded(
               flex: 2,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 8.0,
                 children: ConstantNavLocations.getNavNames().asMap().map((index, item){
                   return  MapEntry(
                       index,
