@@ -9,5 +9,7 @@ static const String landingSubtitle = "Information Technology Student.";
 static const String skillsTitle1 = "Technical";
 static const String skillsTitle2 = " Experience";
 
+// Education 
+static const String educationTitle = "Education";
 
 }

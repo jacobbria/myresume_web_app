@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume_web_application/widgets/education_widgets/education_widget.dart';
 
 class HomePageEducation extends StatelessWidget {
   const HomePageEducation({super.key});
@@ -14,19 +15,24 @@ class HomePageEducation extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Expanded(
-                      flex: 1,
-                      child: Container(
-                        height:MediaQuery.of(context).size.height,
-                        color: Colors.blueGrey[200],
-                      ),
-                    ),
+                   EducationWidget(),
                      Expanded(
                       flex: 1,
-                       child: Container(
-                        height: MediaQuery.of(context).size.height,      
-                        color: Colors.blueGrey[100],
-                                           ),
+                       child: Column(
+                         children: [
+                           Container(
+                            height: MediaQuery.of(context).size.height/2,      
+                            color: Colors.blueGrey[100],
+                           ),
+                           Expanded(
+                             child: Container(
+                             // height: MediaQuery.of(context).size.height/2,      
+                              color: Colors.blueGrey[800],
+                             ),
+                           )
+                                   
+                         ],
+                       ),
                      ),
 
                   ],
