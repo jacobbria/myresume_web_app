@@ -20,4 +20,16 @@ class ConstantFontSizes {
   static const double skillsFontSizeLarge = 50.0;
   static const double skillsFontSizeSmall = 15.0;
 
+  // Education
+  static const double educationTitleSizeLarge = 70.0;
+  static const double educationTitleSizeSmall = 30.0;
+    // Degree(s)
+  static const double bachelorsInfoSizeLarge = 20.0;
+  static const double bachelorsInfoSizeSmall = 15.0;
+    // Award(s)
+  static const double awardInfoSizeLarge = 20.0;
+  static const double awardInfoSizeSmall = 15.0;
+
+
+
 }

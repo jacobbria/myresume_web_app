@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:resume_web_application/constants/const_fonts/constant_fontcolors.dart';
 import 'package:resume_web_application/constants/const_fonts/constant_fontsizes.dart';
-import 'package:resume_web_application/constants/const_other/constant_nav_locations.dart';
+import 'package:resume_web_application/constants/const_lists/constant_nav_locations.dart';
 
 class NavBarRight extends StatefulWidget {
   const NavBarRight({super.key});

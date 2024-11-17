@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:resume_web_application/constants/const_fonts/constant_fontcolors.dart';
 import 'package:resume_web_application/constants/const_fonts/constant_fontsizes.dart';
-import 'package:resume_web_application/constants/const_other/const_skills.dart';
+import 'package:resume_web_application/constants/const_lists/const_skills.dart';
 
 class SkillsGrid extends StatefulWidget {
   const SkillsGrid({super.key});
