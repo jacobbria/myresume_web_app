@@ -27,6 +27,6 @@ class ConstantFontcolors {
   static const Color gpaColor = Color(0xFFFACC15);
 
   // Awards
-    static const Color awardBoldColor = Color(0xFFFACC15);
+  static const Color awardBoldColor = Color(0xFFFACC15);
   static const Color awardInfoColor = Colors.white;
 }
