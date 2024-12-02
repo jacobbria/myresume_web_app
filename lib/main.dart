@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resume_web_application/screens/home_page/home_page.dart';
+import 'package:resume_web_application/screens/home_page/contact_me_screen/contact_me_landing.dart';
+import 'package:resume_web_application/screens/home_page/home_page/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,11 @@ class MyApp extends StatelessWidget {
         secondaryHeaderColor: const Color(0xFFFACC15),
         scaffoldBackgroundColor: const  Color(0xFF020617), // primary color for header and background ,
       ),
-      home: const HomePage(),
+      routes: {
+        '/': (context) => HomePage(),
+        '/contact': (context) => ContactMeLanding(),
+      }
+      
     );
   }
 }

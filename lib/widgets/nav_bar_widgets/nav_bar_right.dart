@@ -39,7 +39,19 @@ class _NavBarRightState extends State<NavBarRight> {
                         });
                       },
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          switch (index) {
+                            case 0 :
+                              Navigator.pushNamed(context, '/');
+                              break;
+                            case 3:
+                             Navigator.pushNamed(context, '/contact');
+                              break;
+                            default:
+                              Navigator.pushNamed(context, '/');
+
+                          }
+                        },
                          child: Text(
                           item,
                           style: TextStyle(

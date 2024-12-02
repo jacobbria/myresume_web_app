@@ -29,4 +29,7 @@ class ConstantFontcolors {
   // Awards
   static const Color awardBoldColor = Color(0xFFFACC15);
   static const Color awardInfoColor = Colors.white;
+
+  // Footer
+  static const Color footerBackcolor = Color(0xFFFACC15);
 }

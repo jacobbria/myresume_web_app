@@ -13,5 +13,13 @@ static const String skillsTitle2 = " Experience";
 static const String educationTitle = "Education";
 static const String awardTitle = "Awards";
 
+// Work
+static const String professionalTitle = "Professional";
+static const String professionalTitleExperience = " Experience";
+static const String fieldTechTitle = "Field Technician";
+static const String ays = "At Your Service Roofing and Remodeling";
+static const String volunteerTitleExperience = "Experience";
+
+
 
 }

@@ -11,6 +11,7 @@ class HomePageEducation extends StatelessWidget {
             height: MediaQuery.of(context).size.height,
             color: Theme.of(context).primaryColor,
             child: EduGrid(),
+            
           );
   }
 }

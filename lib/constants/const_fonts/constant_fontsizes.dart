@@ -8,8 +8,8 @@ class ConstantFontSizes {
   // Landing Page
   // Landing Page LEFT
   static const double landingNameFontSize = 180.0;
-  static const double landingNameFontSizeSmall = 60;
-  static const double landingSubtitleFontSize = 70.0;
+  static const double landingNameFontSizeSmall = 80;
+  static const double landingSubtitleFontSize = 90.0;
   static const double landingSubtitleFontSizeSmall = 25;
 
   // Skills Page
@@ -29,6 +29,7 @@ class ConstantFontSizes {
     // Award(s)
   static const double awardInfoSizeLarge = 20.0;
   static const double awardInfoSizeSmall = 15.0;
+    // Work
 
 
 
