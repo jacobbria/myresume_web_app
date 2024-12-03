@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    final ScrollController _sc = ScrollController();
+    final ScrollController sc = ScrollController();
 
     // Retrieve screen size for use
     final screenHeight = MediaQuery.of(context).size.height;
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: const NavBar(),
       body: ListView(
-        controller: _sc,
+        controller: sc,
         scrollDirection: Axis.vertical,
         children:  [
           // LANDING 
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                 width: MediaQuery.of(context).size.width,
                 height: 55,
                 child: TextButton(onPressed: () {
-                  _sc.animateTo(
+                  sc.animateTo(
                     0,
                      duration: Duration(milliseconds: 500),
                       curve: Curves.easeInOut);

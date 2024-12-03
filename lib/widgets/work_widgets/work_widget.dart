@@ -13,7 +13,7 @@ class WorkWidget extends StatelessWidget {
     return Expanded(
       child: Column(
          children: [
-           Container(
+           SizedBox(
                              // color: Colors.blueGrey[300],
                               width: MediaQuery.of(context).size.width,
                               height: 50,

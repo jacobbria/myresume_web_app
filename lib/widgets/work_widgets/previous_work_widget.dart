@@ -9,7 +9,7 @@ class PreviousWorkWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
                               flex: 1,
-                              child: Container(
+                              child: SizedBox(
                               //  color: Colors.blueGrey[500],
                                 width: MediaQuery.of(context).size.width,
                                 height: 10,

@@ -4,7 +4,7 @@ import 'package:resume_web_application/constants/const_fonts/constant_fontcolors
 
 class FooterWidget extends StatefulWidget {
   
-  FooterWidget(ScrollController sc, {super.key, });
+  const FooterWidget(ScrollController sc, {super.key, });
 
   @override
   State<FooterWidget> createState() => _FooterWidgetState();

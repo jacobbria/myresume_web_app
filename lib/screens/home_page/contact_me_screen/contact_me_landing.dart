@@ -13,6 +13,7 @@ class ContactMeLanding extends StatefulWidget {
 class _ContactMeLandingState extends State<ContactMeLanding> {
   final TextEditingController _tec = TextEditingController();
 
+  @override
   void dispose() {
     _tec.dispose();
     super.dispose();
@@ -35,7 +36,7 @@ class _ContactMeLandingState extends State<ContactMeLanding> {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
+                    children: const [
                       Text("Center text")
                     ],
                   ),
